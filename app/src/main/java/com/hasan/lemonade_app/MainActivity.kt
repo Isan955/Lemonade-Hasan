@@ -51,26 +51,26 @@ class MainActivity : ComponentActivity() {
 }
 
 
-//// fungsi halaman pertama dibukak
-//@Composable
-//fun WelcomeScreen(name: String, onStartClicked: () -> Unit) {
-//    Column(
-//        modifier = Modifier
-//            .fillMaxSize()
-//            .padding(16.dp),
-//        horizontalAlignment = Alignment.CenterHorizontally,
-//        verticalArrangement = Arrangement.Center
-//    ) {
-//        Text(
-//            text = "Welcome $name!",
-//            style = MaterialTheme.typography.headlineMedium
-//        )
-//        Spacer(modifier = Modifier.height(16.dp))
-//        Button(onClick = onStartClicked) {
-//            Text("Start")
-//        }
-//    }
-//}
+// fungsi halaman pertama dibukak
+@Composable
+fun WelcomeScreen(name: String, onStartClicked: () -> Unit) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = "Welcome $name!",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        Button(onClick = onStartClicked) {
+            Text("Start")
+        }
+    }
+}
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -209,14 +209,14 @@ fun LemonPreview() {
 
 
 
-@Composable
-fun WelcomeScreen(name: String, onStartClicked: () -> Unit) {
-    Column {
-        Text(text = "Welcome $name!")
-        Button(
-            onClick = onStartClicked
-        ) {
-            Text("Start")
-        }
-    }
-}
+//@Composable
+//fun WelcomeScreen(name: String, onStartClicked: () -> Unit) {
+//    Column {
+//        Text(text = "Welcome $name!")
+//        Button(
+//            onClick = onStartClicked
+//        ) {
+//            Text("Start")
+//        }
+//    }
+//}
